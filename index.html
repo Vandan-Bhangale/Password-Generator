@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Main container starts here-->
+    <div class="container">
+        <!--heading-->
+        <h2 class="heading">Password Generator</h2>
+        <!--heading ends here-->
+
+        <!--password display-->
+        <div class="display">
+            <input type="text" name="Password" id="passbox" disabled />
+            <i class="fa-solid fa-copy copybtn" style="color: #000000; display: none;"></i>
+
+        </div>
+        <!--password display ends here-->
+        
+        <!--Length bar-->
+        <div class="length"><input class="slide" type="range" min="1" max="20" value = "8" ><p class="value">8</p></div>
+        <!--Length bar ends here-->
+
+        <!--Specification section-->
+        <div class="speccontainer">
+        <div class="specs">
+            <label for="lowercase">Include lowercase letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="specs">
+            <label for="uppercase">Include uppercase letters (A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase">
+        </div>
+        <div class="specs">
+            <label for="numbers">Include numebrs (0-9)</label>
+            <input type="checkbox" name="numbers" id="numbers">
+        </div>
+        <div class="specs">
+            <label for="lowercase">Include symbols (@ - *)</label>
+            <input type="checkbox" name="symbols" id="symbols">
+        </div>
+    </div>
+        <!--Specification section ends here-->
+    <button class="btn">Generate Password</button>
+    </div>
+    <!--Main container ends here-->
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
